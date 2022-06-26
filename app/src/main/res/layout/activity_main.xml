@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/camaro"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/camaro" />
+
+        <ImageView
+            android:id="@+id/instaLogo"
+            android:layout_width="@dimen/_105sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/insta_logo" />
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_toLeftOf="@+id/directMessage"
+            android:src="@drawable/igtv" />
+
+        <ImageView
+            android:id="@+id/directMessage"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/direct" />
+    </RelativeLayout>
+    // TitleBar View
+
+    <RelativeLayout
+        android:id="@+id/mainScreen"
+        android:layout_below="@id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ScrollView
+    android:id="@+id/scroll"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <HorizontalScrollView
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/horizontalScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/story1"
+                        android:layout_width="@dimen/_62sdp"
+                        android:layout_height="@dimen/_81sdp"
+                        android:src="@drawable/story_1" />
+
+                    <ImageView
+                        android:id="@+id/story2"
+                        android:layout_width="@dimen/_62sdp"
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/story1"
+                        android:src="@drawable/story_2" />
+
+                    <ImageView
+                        android:id="@+id/story3"
+                        android:layout_width="@dimen/_62sdp"
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/story2"
+                        android:src="@drawable/story_5" />
+
+                    <ImageView
+                        android:id="@+id/story4"
+                        android:layout_width="@dimen/_62sdp"
+
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/story3"
+                        android:src="@drawable/story_6" />
+
+                    <ImageView
+                        android:id="@+id/story5"
+                        android:layout_width="@dimen/_62sdp"
+
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/story4"
+                        android:src="@drawable/story_5" />
+
+                    <ImageView
+                        android:id="@+id/story6"
+                        android:layout_width="@dimen/_62sdp"
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/story5"
+                        android:src="@drawable/story_6" />
+
+                    <ImageView
+                        android:id="@+id/story7"
+                        android:layout_width="@dimen/_62sdp"
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@id/story6"
+                        android:src="@drawable/story_7" />
+
+                    <ImageView
+                        android:id="@+id/story8"
+                        android:layout_width="@dimen/_62sdp"
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/story7"
+                        android:src="@drawable/story_5" />
+
+                    <ImageView
+                        android:id="@+id/story9"
+                        android:layout_width="@dimen/_62sdp"
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/story8"
+                        android:src="@drawable/story_6" />
+
+                    <ImageView
+                        android:id="@+id/story10"
+                        android:layout_width="@dimen/_62sdp"
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/story9"
+                        android:src="@drawable/story_2" />
+
+                    <ImageView
+                        android:id="@+id/story11"
+                        android:layout_width="@dimen/_62sdp"
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/story10"
+                        android:src="@drawable/story_7" />
+
+                    <ImageView
+                        android:id="@+id/story12"
+                        android:layout_width="@dimen/_62sdp"
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/story11"
+                        android:src="@drawable/story_5" />
+
+                    <ImageView
+                        android:id="@+id/story13"
+                        android:layout_width="@dimen/_62sdp"
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/story12"
+                        android:src="@drawable/story_6" />
+
+                    <ImageView
+                        android:id="@+id/story14"
+                        android:layout_width="@dimen/_62sdp"
+                        android:layout_height="@dimen/_81sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/story13"
+                        android:src="@drawable/story_7" />
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+            // horizontal story ScrollView
+
+        <ImageView
+            android:id="@+id/first"
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_448sdp"
+            android:layout_below="@id/horizontalScroll"
+            android:src="@drawable/mainimage" />
+
+        <ImageView
+            android:id="@+id/second"
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_448sdp"
+            android:layout_below="@id/first"
+            android:src="@drawable/mainimage" />
+        <ImageView
+            android:id="@+id/third"
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_448sdp"
+            android:layout_below="@id/second"
+            android:src="@drawable/mainimage" />
+        <ImageView
+            android:id="@+id/forth"
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_448sdp"
+            android:layout_below="@id/third"
+            android:src="@drawable/mainimage" />
+        <ImageView
+            android:id="@+id/fifth"
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_448sdp"
+            android:layout_below="@id/forth"
+            android:src="@drawable/mainimage" />
+        <ImageView
+            android:id="@+id/sixth"
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_448sdp"
+            android:layout_below="@id/fifth"
+            android:src="@drawable/mainimage" />
+        <ImageView
+            android:id="@+id/seventh"
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_448sdp"
+            android:layout_below="@id/sixth"
+            android:src="@drawable/mainimage" />
+        <ImageView
+            android:id="@+id/eighth"
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_448sdp"
+            android:layout_below="@id/seventh"
+            android:src="@drawable/mainimage" />
+    </RelativeLayout>
+</ScrollView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:src="@drawable/navigation" />
+
+    </RelativeLayout>
+    // navigation bar
+</RelativeLayout>
